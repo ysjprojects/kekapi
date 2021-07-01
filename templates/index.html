@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="main-img-div">
+        <img class="main-img" src="{{ url_for('static', filename='img/kekapi.png') }}"/>
+    </div>
+    <div class="text-center">
+        <h1 class='text-center'>{% block title %}KEKAPI{% endblock %}{% block title1 %}{% endblock %}</h1>
+    </div>
+    <div class="text-center">
+        <p>KEKAPI is a simple website hosting personal API projects. It is free for all.</h5>
+        <p>Our API is directly accessible through our endpoints. No authentication required.</p>   
+    </div>
+    <div style="margin-top:45px">
+        <h3 class="text-center">API Projects</h3>
+    </div>
+    
+    <div class="row">
+            <div class="col-md-3 text-center">
+                <div class="project-img-div">
+                    <img class="project-img" src="{{ url_for('static', filename='img/coinlogos.png') }}">
+                </div>
+                <a href="http://coinlogos.kekapi.com"><h4>Coinlogos</h4></a>
+                <p>Query cryptocurrency logos based on Coingecko ID or contract address</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="project-img-div">
+                    <img class="project-img" src="{{ url_for('static', filename='img/worldometerlive.png') }}">
+                </div>
+                <a href="http://worldometerlive.kekapi.com"><h4>Worldometer Live</h4></a>
+                <p>RESTful API for Worldometer data in real time</p>
+            </div>
+            <div class="col-md-3 text-center">
+                
+            </div>
+            <div class="col-md-3 text-center">
+
+            </div>
+    </div>
+
+    </div>
+
+{% endblock %}
